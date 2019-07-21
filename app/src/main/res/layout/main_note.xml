@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seashell">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!---->
+<!--<RelativeLayout-->
+    <!--android:background="@color/white"-->
+    <!--android:id="@+id/rl_top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:id="@+id/tv_title"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:text="Ridder Note"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/gray"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+<!--</RelativeLayout>-->
+  <!---->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_starnote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orangered"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_starnote"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_star"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_starnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Star Note"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_unstarnote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dodgerblue"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/iv_unstarnote"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_unstar"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_unstarnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="UnStar Note"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_below="@id/ll_top"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v4.view.ViewPager>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_add"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:layout_width="45dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:src="@drawable/ic_add_box_black_48dp"-->
+        <!--/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/blue"
+        android:layout_gravity="bottom|end"
+        android:fitsSystemWindows="false"
+        android:elevation="10dp"
+        />
+    </FrameLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+

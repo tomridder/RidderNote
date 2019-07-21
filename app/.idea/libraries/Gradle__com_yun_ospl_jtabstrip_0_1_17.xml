@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yun.ospl:jtabstrip-0.1.17">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jtabstrip-0.1.17.aar/ae1fa639c2ed5da52b6c24ba9fc0edc6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jtabstrip-0.1.17.aar/ae1fa639c2ed5da52b6c24ba9fc0edc6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yun.ospl/jtabstrip/0.1.17/8cb6081469c0d611a4b6832f9d0b364c8bc6f851/jtabstrip-0.1.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

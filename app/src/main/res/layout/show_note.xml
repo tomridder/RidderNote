@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seashell">
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/note_show_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/gray"
+        android:src="@drawable/ic_arrow_back_black_48dp" />
+    />
+
+
+    <ImageView
+        android:id="@+id/note_show_up"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/gray"
+        android:layout_toLeftOf="@id/note_show_down"
+        android:src="@drawable/ic_keyboard_arrow_up_black_48dp"
+        />
+    <ImageView
+        android:id="@+id/note_show_down"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/gray"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_keyboard_arrow_down_black_48dp"
+        />
+
+    <TextView
+        android:id="@+id/note_show_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:tint="@color/gray"
+        android:layout_below="@id/note_show_back"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray">
+    </TextView>
+
+    <TextView
+        android:id="@+id/note_show_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_show_line"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/note_show_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:tint="@color/yellow"
+        android:src="@drawable/ic_star_black_48dp"
+        android:layout_below="@id/note_show_time"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        />
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="7dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_above="@id/note_new_et_title"-->
+    <!--android:layout_below="@id/line"-->
+    <!--android:layout_marginTop="9dp"-->
+    <!--android:text="时间"-->
+    <!--android:textColor="#000"></TextView>-->
+
+    <TextView
+        android:id="@+id/note_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_show_time"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="top"
+        android:hint="Title"
+        android:textSize="20sp"
+        android:background="@null"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/note_show_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_below="@id/note_show_title"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"></TextView>
+
+
+    <TextView
+        android:id="@+id/note_show_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/note_show_line2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:lineSpacingMultiplier="1.5"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:hint="Content"
+        android:background="@null"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/note_new_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:tint="@color/gray"
+        android:layout_above="@id/down"
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/down"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/note_show_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:tint="@color/gray"
+            android:src="@drawable/ic_delete_black_48dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/note_show_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:tint="@color/gray"
+            android:src="@drawable/ic_mode_edit_black_48dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/note_show_change_star"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:tint="@color/gray"
+            android:src="@drawable/ic_star_black_48dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/note_show_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:tint="@color/gray"
+            android:src="@drawable/ic_share_black_48dp"
+            android:layout_weight="1"
+            />
+        <!--<ImageView-->
+        <!--android:id="@+id/note_show_backup"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@drawable/ic_backup_black_48dp"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+        <!--<ImageView-->
+        <!--android:id="@+id/note_show_screen_shot"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@drawable/ic_camera_enhance_black_48dp"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+    </LinearLayout>
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

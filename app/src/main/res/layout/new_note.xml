@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seashell">
+
+
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="15dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/note_new_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/gray"
+        android:tint="@color/gray"
+        android:src="@drawable/ic_arrow_back_black_48dp" />
+    />
+
+    <ImageView
+        android:id="@+id/note_new_save"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/gray"
+        android:src="@drawable/ic_done_black_48dp"
+        />
+
+    <TextView
+        android:id="@+id/note_new_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/note_new_back"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"></TextView>
+    <TextView
+        android:id="@+id/note_new_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/note_new_line"
+        android:textColor="@color/gray"
+        />
+
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="7dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_above="@id/note_new_et_title"-->
+    <!--android:layout_below="@id/line"-->
+    <!--android:layout_marginTop="9dp"-->
+    <!--android:text="时间"-->
+    <!--android:textColor="#000"></TextView>-->
+
+    <EditText
+        android:id="@+id/note_new_et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_new_time"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:hint="Title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp"
+        android:background="@null"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/note_new_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/note_new_et_title"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray">
+    </TextView>
+
+    <EditText
+        android:id="@+id/note_new_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/note_new_line2"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:hint="Content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:lineSpacingMultiplier="1.5"
+        android:textSize="15sp"
+        android:background="@null"
+        android:textColor="#000"
+        />
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
