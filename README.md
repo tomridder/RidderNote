@@ -1,5 +1,5 @@
 ### 前言
-> 本文的内容主要是解析Ridder Note APP 的制作流程，以及代码的具体实现，若有什么不足之处，还请提出建议，附上这个 APP 的 Github 地址 [Ridder Note](https://github.com/tomridder/Ridder-Note) 欢迎大家 star 和 fork.
+> 本文的内容主要是解析Ridder Note APP 的制作流程，以及代码的具体实现，若有什么不足之处，还请提出建议，附上这个 APP 的 Github 地址 [Ridder Note](https://github.com/tomridder/RidderNote) 欢迎大家 star 和 fork.
 
 Ridder Note可实现功能：
 
@@ -20,10 +20,10 @@ Ridder Note可实现功能：
 先来一波Note的展示吧，这款 APP 还是非常精美和优雅的
 - 增删查改note的效果
 
-![1.gif](https://github.com/tomridder/Ridder-Note/blob/master/1.gif)
+![1.gif](https://github.com/tomridder/RidderNote/blob/master/1.gif)
 
 - StarNote和 UnStarNote切换  上翻下翻记事 清空记事后服务器端恢复记事的效果
-![2.gif](https://github.com/tomridder/Ridder-Note/blob/master/2.gif)
+![2.gif](https://github.com/tomridder/RidderNote/blob/master/2.gif)
 ## 一、日记查询的实现
 #### 1、利用litepal建立表
 LitePal是一款开源的Android数据库框架，采用对象关系映射（ORM）模式，将常用的数据库功能进行封装，可以不用写一行SQL语句就可以完成创建表、增删改查的操作。
@@ -307,7 +307,7 @@ MainNote含有Callback对象的List集合，UnStarFragment ， StarFragment分�
 
 这样最后效果实现。
 
-以上便是我写这个 APP 的具体实现思路，以及踩过的一些坑，记录下来，给大家看看，最后附上这个 APP 的 Github 地址 [Ridder Note](https://github.com/tomridder/Ridder-Note) 欢迎大家 star 和 fork，如果有什么想法或者建议，非常欢迎大家来讨论
+以上便是我写这个 APP 的具体实现思路，以及踩过的一些坑，记录下来，给大家看看，最后附上这个 APP 的 Github 地址 [Ridder Note](https://github.com/tomridder/RidderNote) 欢迎大家 star 和 fork，如果有什么想法或者建议，非常欢迎大家来讨论
 
 -----
 ### 猜你喜欢
