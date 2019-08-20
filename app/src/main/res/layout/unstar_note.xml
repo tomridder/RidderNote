@@ -5,7 +5,9 @@
     android:layout_marginTop="15dp"
     android:layout_marginRight="5dp"
     android:layout_marginLeft="5dp"
-    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="1dp"
+    android:background="#FFFFFF"
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,6 +71,8 @@
                     android:lineSpacingMultiplier="1.5"
                     android:layout_marginLeft="5dp"
                     android:text="内容"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     android:textStyle="bold"
                     android:textColor="#000"
                     android:textSize="13sp"/>
